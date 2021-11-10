@@ -1,0 +1,10 @@
+[]Agregar un context que maneje las búsquedas por nombre
+[]Agregar un select para filtrar por status
+[]Documentar la app con props
+[]Crear repo en github
+[]Realizar tests con jest
+[]Realizar tests con cypress
+[]Maquetar la home
+[]Maquetar detail page
+[]Crear un footer
+
