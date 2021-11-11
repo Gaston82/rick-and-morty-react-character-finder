@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from "react";
-import useCharacters from "../hooks/useCharacters";
 import getAllCharacters from "../services/api";
 
 export const QueryContext = createContext();
@@ -7,8 +6,6 @@ export const QueryContext = createContext();
 const QueryProvider = (props) => {
   const [query, setQuery] = useState("");
   const [characters, setCharacters] = useState([]);
-
-  // const name = useContext(QueryContext);
 
   useEffect(() => {
     const fetchCharacters = async () => {
