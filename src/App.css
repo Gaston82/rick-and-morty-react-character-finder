@@ -2,30 +2,42 @@ img{
     display:block;
     max-width: 100%;
 }
-
+h2{
+    color: white;
+}
 a{
     text-decoration: none;
+    color: white;
 }
+
+body{
+    background-color: black;
+}
+
+/* .box{
+    border: orangered solid 2px;
+    width: 500px;
+} */
 
 .container{
     width:90%;
     margin:0 auto;
 }
-form{
+/* form{
     border: orangered solid 2px;
 
-}
+} */
 
 /* HEADER */
 .header{
     display: flex;
     justify-content: center;
-    border: orangered solid 2px;
+    /* border: orangered solid 2px; */
 }
 .header__logo{
 
     height: 200px;
-    border: green solid 2px;
+    /* border: green solid 2px; */
 
 }
 
@@ -36,4 +48,21 @@ form{
     grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
     justify-content: center;
     grid-gap:1em;
+    margin: 5em;
+}
+
+/* #00AFC8 */
+.card-character{
+    border: 2px solid #00AFC8;
+    border-radius: 5px;
+    max-width: 300px;
+}
+.card-character:hover{
+    background-color: #00AFC8;
+    border: 2px solid #fafafa;
+
+}
+.card__footer{
+    /* padding-left: 5px; */
+    text-align: center;
 }

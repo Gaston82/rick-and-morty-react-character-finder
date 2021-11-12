@@ -6,11 +6,19 @@ export const QueryContext = createContext();
 const QueryProvider = (props) => {
   const [query, setQuery] = useState("");
   const [characters, setCharacters] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchCharacters = async () => {
-      const result = await getAllCharacters(query);
-      setCharacters(result);
+      setLoading(true);
+      try {
+        const result = await getAllCharacters(query);
+        setCharacters(result);
+        setLoading(false);
+      } catch (error) {
+        setError(true);
+      }
     };
     fetchCharacters();
   }, [query]);
@@ -21,6 +29,9 @@ const QueryProvider = (props) => {
         query,
         setQuery,
         characters,
+        loading,
+        error,
+        setError,
       }}
     >
       {props.children}

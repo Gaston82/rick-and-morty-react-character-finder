@@ -1,23 +1,25 @@
 import { useContext } from "react";
 import { QueryContext } from "../context/query";
 import Character from "./character";
+import Spinner from "./spinner";
 
 export default function ListOfCharacters() {
-  const { characters } = useContext(QueryContext);
-
-  if (!characters) {
-    return <p>Loading...</p>;
-  }
+  const { characters, loading, error } = useContext(QueryContext);
 
   return (
     <>
-      <div className="container">
-        <div className="characters-grid">
-          {characters.map((character) => (
-            <Character key={character.id} {...character} />
-          ))}
+      {error ? (
+        <Spinner />
+      ) : (
+        // <h2>Not found</h2>
+        <div className="container">
+          <div className="characters-grid">
+            {characters.map((character) => (
+              <Character key={character.id} {...character} />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

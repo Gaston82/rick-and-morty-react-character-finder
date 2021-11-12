@@ -2,25 +2,24 @@ const getAllCharacters = async (name) => {
   let baseUrl = `https://rickandmortyapi.com/api/character/?`;
   name ? (baseUrl += `name=${name}`) : (baseUrl = baseUrl);
 
-  try {
-    const response = await fetch(baseUrl);
-    const data = await response.json();
-
-    const characters = data.results.map((character) => {
-      return {
-        id: character.id,
-        name: character.name,
-        image: character.image,
-        species: character.species,
-        status: character.status,
-        origin: character.origin.name,
-        episode: character.episode.length,
-      };
-    });
-    return characters;
-  } catch (error) {
-    console.log(error);
+  const response = await fetch(baseUrl);
+  const data = await response.json();
+  if (data.error) {
+    throw new Error(data.error);
   }
+  // console.log(data.error);
+  const characters = data.results.map((character) => {
+    return {
+      id: character.id,
+      name: character.name,
+      image: character.image,
+      species: character.species,
+      status: character.status,
+      origin: character.origin.name,
+      episode: character.episode.length,
+    };
+  });
+  return characters;
 };
 
 export async function getCharacterById(id) {

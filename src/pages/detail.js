@@ -11,10 +11,12 @@ export function Detail() {
   return (
     <div className="container">
       <Header />
-      <Character {...character} />
-      <Link to={"/"}>
-        <p>Go Back to the list</p>
-      </Link>
+      <div className="box">
+        <Character {...character} />
+        <Link to={"/"}>
+          <p>Go Back to the list</p>
+        </Link>
+      </div>
     </div>
   );
 }
