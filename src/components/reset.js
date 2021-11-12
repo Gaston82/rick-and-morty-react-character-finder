@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { QueryContext } from "../context/query";
 
 export default function Reset() {
-  let { setQuery } = useContext(QueryContext);
+  let { setQuery, setError } = useContext(QueryContext);
   const handleOnClick = (e) => {
     setQuery("");
+    setError(false);
   };
   return (
     <button type="button" onClick={handleOnClick}>
