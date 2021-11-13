@@ -21,7 +21,6 @@ export default function Form() {
         Search By Name
         <input type="text" onChange={handleInputChange} value={name} />
       </label>
-      <input type="submit" value="Search" />
     </form>
   );
 }
