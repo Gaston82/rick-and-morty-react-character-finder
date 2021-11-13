@@ -40,6 +40,18 @@ body{
     /* border: green solid 2px; */
 
 }
+input{
+    margin-left: 6px;
+    height: 30px;
+    width: 200px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+label{
+    color: wheat;
+}
 
 /* LIST OF CHARACTERS */
 
@@ -56,10 +68,13 @@ body{
     border: 2px solid #00AFC8;
     border-radius: 5px;
     max-width: 300px;
+    transition: transform 200ms ease-in-out;
 }
+
 .card-character:hover{
     background-color: #00AFC8;
     border: 2px solid #fafafa;
+    transform: translateY(-1rem);
 
 }
 .card__footer{
