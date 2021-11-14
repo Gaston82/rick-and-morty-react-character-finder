@@ -1,7 +1,7 @@
 # Rick and Morty character finder
 
 ![](https://media.giphy.com/media/l378sIkgDgy46HHdC/giphy.gif)
-![](https://giphy.com/gifs/adultswim-l378BzHA5FwWFXVSg)
+![](https://giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif)
 
 # Getting Started with Create React App
 
