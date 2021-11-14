@@ -4,7 +4,7 @@ import getAllCharacters from "../services/api";
 export const QueryContext = createContext();
 
 const QueryProvider = (props) => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState({ name: "", status: "" });
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -13,7 +13,10 @@ const QueryProvider = (props) => {
     const fetchCharacters = async () => {
       setLoading(true);
       try {
-        const result = await getAllCharacters(query);
+        const result = await getAllCharacters({
+          name: query.name,
+          status: query.status,
+        });
         setCharacters(result);
         setLoading(false);
       } catch (error) {

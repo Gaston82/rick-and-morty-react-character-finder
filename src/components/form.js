@@ -2,25 +2,45 @@ import { useState, useContext } from "react";
 import { QueryContext } from "../context/query";
 
 export default function Form() {
-  const [name, setName] = useState("");
+  const [value, setValue] = useState({ name: "", status: "" });
+
   const { setQuery } = useContext(QueryContext);
 
   const handleInputChange = (e) => {
-    setName(e.target.value);
+    setValue({
+      ...value,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setQuery(name);
-    setName("");
+    setQuery(value);
+    setValue({
+      name: "",
+      status: "",
+    });
   };
+  const { name, status } = value;
 
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="name">
-        Search By Name
-        <input type="text" onChange={handleInputChange} value={name} />
+        Character Name
+        <input
+          type="text"
+          onChange={handleInputChange}
+          name="name"
+          value={name}
+        />
       </label>
+
+      <select onChange={handleInputChange} name="status" value={status}>
+        <option>Alive</option>
+        <option>Dead</option>
+        <option>Unknown</option>
+      </select>
+      <button>Search</button>
     </form>
   );
 }

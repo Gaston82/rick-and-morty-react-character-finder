@@ -9,14 +9,14 @@ export function Detail() {
   const { character } = useCharacter(id);
 
   return (
-    <div className="container">
+    <>
       <Header />
-      <div className="box">
+      <div className="container-detail">
         <Character {...character} />
         <Link to={"/"}>
           <p>Go Back to the list</p>
         </Link>
       </div>
-    </div>
+    </>
   );
 }

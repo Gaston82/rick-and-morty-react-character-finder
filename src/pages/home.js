@@ -4,7 +4,9 @@ import ListOfCharacters from "../components/listOfCharacters";
 export function Home() {
   return (
     <>
-      <Header />
+      <div className="container">
+        <Header />
+      </div>
       <ListOfCharacters />
     </>
   );
