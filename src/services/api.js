@@ -1,13 +1,11 @@
-const getAllCharacters = async (name) => {
-  let baseUrl = `https://rickandmortyapi.com/api/character/?`;
-  name ? (baseUrl += `name=${name}`) : (baseUrl = baseUrl);
-
-  const response = await fetch(baseUrl);
+const getAllCharacters = async ({ name = "", status = "" }) => {
+  let url = `https://rickandmortyapi.com/api/character/?name=${name}&status=${status}`;
+  const response = await fetch(url);
   const data = await response.json();
   if (data.error) {
     throw new Error(data.error);
   }
-  // console.log(data.error);
+
   const characters = data.results.map((character) => {
     return {
       id: character.id,
@@ -19,11 +17,12 @@ const getAllCharacters = async (name) => {
       episode: character.episode.length,
     };
   });
+  console.log(characters);
   return characters;
 };
 
 export async function getCharacterById(id) {
-  const url = `https://rickandmortyapi.com/api/character/${id}`;
+  let url = `https://rickandmortyapi.com/api/character/${id}`;
   const response = await fetch(url);
   const data = await response.json();
 
