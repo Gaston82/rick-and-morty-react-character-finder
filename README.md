@@ -4,7 +4,7 @@
 
 # Description
 
-This is a Rick and Morty character finder app
+This is a Rick and Morty character finder app. Puedes buscar personajes por nombre y también por status (alive,dead or unknown)
 
 ### Table of Contents
 
@@ -45,3 +45,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - Linkedin - [Gastón Artaza Yañez](https://www.linkedin.com/in/gast%C3%B3n-artaza-frontend-developer/)
 - Github - [Gaston82](https://github.com/Gaston82)
 - Twitter - [@garyacode](https://twitter.com/garyacode)
+
+[Back to The Top](#Rick and Morty character finder)

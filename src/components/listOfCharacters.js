@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { QueryContext } from "../context/query";
 import Character from "./character";
-import Spinner from "./spinner";
+import NotFound from "./not-found";
 
 export default function ListOfCharacters() {
   const { characters, loading, error } = useContext(QueryContext);
@@ -9,7 +9,7 @@ export default function ListOfCharacters() {
   return (
     <>
       {error ? (
-        <Spinner />
+        <NotFound />
       ) : (
         // <h2>Not found</h2>
         <div className="container">

@@ -17,7 +17,7 @@ const getAllCharacters = async ({ name = "", status = "" }) => {
       episode: character.episode.length,
     };
   });
-  console.log(characters);
+
   return characters;
 };
 

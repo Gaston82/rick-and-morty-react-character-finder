@@ -8,7 +8,7 @@ export default function Reset() {
     setError(false);
   };
   return (
-    <button type="button" onClick={handleOnClick}>
+    <button className="btn" type="button" onClick={handleOnClick}>
       Reset
     </button>
   );
