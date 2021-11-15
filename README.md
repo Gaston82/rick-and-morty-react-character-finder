@@ -11,7 +11,18 @@ This is a Rick and Morty character finder app. Puedes buscar personajes por nomb
 - [Description](#description)
 - [How to Use](#how-to-use)
 - [Description](#description)
+- [Objetivos del proyecto](#description)
 - [Author](#author-info)
+
+## Objetivos del proyecto
+
+- Manejo del estado de la aplicación mediante Context api
+- Creación e implementación de custom hooks con el fin de optimizar el código
+- Utilización de una API externa
+- Manejo de errores en los llamados a la API
+- Realización de un layout responsive sin la utilización de media queries
+- Manejo de rutas con react router dom
+- Estilos con CSS modules
 
 ### Technologies
 
