@@ -25,22 +25,27 @@ export default function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">
-        Character Name
-        <input
-          type="text"
-          onChange={handleInputChange}
-          name="name"
-          value={name}
-        />
-      </label>
-
-      <select onChange={handleInputChange} name="status" value={status}>
-        <option>Alive</option>
-        <option>Dead</option>
-        <option>Unknown</option>
-      </select>
-      <button>Search</button>
+      <div className="flex">
+        <label htmlFor="name">
+          Character Name
+          <input
+            type="text"
+            autoComplete="off"
+            onChange={handleInputChange}
+            name="name"
+            value={name}
+          />
+        </label>
+        <label htmlFor="status">
+          Status
+          <select onChange={handleInputChange} name="status" value={status}>
+            <option>Alive</option>
+            <option>Dead</option>
+            <option>Unknown</option>
+          </select>
+        </label>
+      </div>
+      <button className="btn">Search</button>
     </form>
   );
 }
