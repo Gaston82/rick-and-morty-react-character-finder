@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Detail } from "./pages/detail";
 import QueryProvider from "./context/query";
-import "./App.css";
 import NotFound from "./components/not-found";
 
 function App() {

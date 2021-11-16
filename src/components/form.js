@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { QueryContext } from "../context/query";
+import styles from "../styles/Form.module.css";
 
 export default function Form() {
   const [value, setValue] = useState({ name: "", status: "" });
@@ -26,9 +27,10 @@ export default function Form() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex">
-        <label htmlFor="name">
+        <label className={styles.form__label} htmlFor="name">
           Character Name
           <input
+            className={styles.form__input}
             type="text"
             autoComplete="off"
             onChange={handleInputChange}
@@ -36,16 +38,21 @@ export default function Form() {
             value={name}
           />
         </label>
-        <label htmlFor="status">
+        <label className={styles.form__label} htmlFor="status">
           Status
-          <select onChange={handleInputChange} name="status" value={status}>
+          <select
+            className={styles.form__select}
+            onChange={handleInputChange}
+            name="status"
+            value={status}
+          >
             <option>Alive</option>
             <option>Dead</option>
             <option>Unknown</option>
           </select>
         </label>
       </div>
-      <button className="btn">Search</button>
+      <button className={styles.btn}>Search</button>
     </form>
   );
 }

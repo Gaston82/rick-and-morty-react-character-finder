@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { QueryContext } from "../context/query";
+import { btn } from "../styles/Form.module.css";
 
 export default function Reset() {
   let { setQuery, setError } = useContext(QueryContext);
@@ -8,7 +9,7 @@ export default function Reset() {
     setError(false);
   };
   return (
-    <button className="btn" type="button" onClick={handleOnClick}>
+    <button className={btn} type="button" onClick={handleOnClick}>
       Reset
     </button>
   );

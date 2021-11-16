@@ -1,12 +1,12 @@
 [x]Agregar un context que maneje las búsquedas por nombre
 [x]Crear repo en github
-[]Manejar errores de resultados
-[]Crear un spinner
-[]Agregar un select para filtrar por status
+[x]Manejar errores de resultados
+[x]Crear un spinner
+[x]Agregar un select para filtrar por status
 []Documentar la app con props
 []Realizar tests con jest
 []Realizar tests con cypress
-[]Maquetar la home
+[x]Maquetar la home
 []Maquetar detail page
 []Crear un footer
 []Crear un readme completo

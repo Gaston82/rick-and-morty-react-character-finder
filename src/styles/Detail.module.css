@@ -1,0 +1,6 @@
+
+.detail__container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px;
+}

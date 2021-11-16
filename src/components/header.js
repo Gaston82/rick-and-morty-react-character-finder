@@ -1,11 +1,16 @@
 import React from "react";
 import headerLogo from "../assets/images/rickandmorty-logo.png";
+import styles from "../styles/Header.module.css";
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div>
-        <img className="header__logo" src={headerLogo} alt="Rick and Morty " />
+        <img
+          className={styles.header__logo}
+          src={headerLogo}
+          alt="Rick and Morty "
+        />
       </div>
     </header>
   );

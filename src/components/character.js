@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../Character.module.css";
-console.log(styles);
+import styles from "../styles/Character.module.css";
 
 export default function Character({ image, name, species, id }) {
   return (

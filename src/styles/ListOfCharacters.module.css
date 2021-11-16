@@ -1,0 +1,11 @@
+.characters__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+    justify-content: center;
+    grid-gap:1em;
+    margin: 5em;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+}

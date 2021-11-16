@@ -2,14 +2,15 @@ import Form from "../components/form";
 import Header from "../components/header";
 import ListOfCharacters from "../components/listOfCharacters";
 import Reset from "../components/reset";
+import styles from "../styles/Detail.module.css";
 
 export function Home() {
   return (
     <>
       <Header />
-      <div className="container-detail">
+      <div className={styles.detail__container}>
         <Form />
-        {/* <Reset /> */}
+        <Reset />
       </div>
       <ListOfCharacters />
     </>

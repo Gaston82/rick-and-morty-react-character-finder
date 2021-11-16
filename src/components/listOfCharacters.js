@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { QueryContext } from "../context/query";
 import Character from "./character";
 import NotFound from "./not-found";
+import styles from "../styles/ListOfCharacters.module.css";
 
 export default function ListOfCharacters() {
   const { characters, loading, error } = useContext(QueryContext);
@@ -11,9 +12,8 @@ export default function ListOfCharacters() {
       {error ? (
         <NotFound />
       ) : (
-        // <h2>Not found</h2>
-        <div className="container">
-          <div className="characters-grid">
+        <div className={styles.container}>
+          <div className={styles.characters__grid}>
             {characters.map((character) => (
               <Character key={character.id} {...character} />
             ))}
