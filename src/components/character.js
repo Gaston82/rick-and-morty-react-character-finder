@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/Character.module.css";
+import PropTypes from "prop-types";
 
 export default function Character({ image, name, species, id }) {
   return (
@@ -14,3 +15,10 @@ export default function Character({ image, name, species, id }) {
     </article>
   );
 }
+
+Character.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  species: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+};
