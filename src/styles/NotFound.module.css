@@ -1,0 +1,15 @@
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 650px;
+    margin-bottom: 5em;
+}
+.notFoundImage{
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.notFoundMessage{
+    color: white;
+    text-align: center;
+}
