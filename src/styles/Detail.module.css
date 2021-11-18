@@ -1,6 +1,57 @@
-
+p{
+    margin: 0;
+}
 .detail__container{
     display: flex;
     justify-content: center;
-    margin: 50px 50px;
+    margin: 0 auto;
+    align-items: center;
+ 
+}
+
+
+.card{
+    border-radius: 10px;
+    color: white;
+    background-color: #3C3E44;
+    width: 280px;
+    cursor: pointer;
+}
+
+.card__name__location{
+    font-weight: 700;
+}
+ .card__name__location:hover{
+     color: #FF9800;
+ }
+
+.card__body{
+    padding: 1em;
+}
+
+
+.card__image{
+    border-radius: 5px;
+}
+
+
+.card__title{
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+.card__title:hover{
+    color: #FF9800;
+}
+
+.card__header{
+    display: flex;
+    font-weight: 700;
+}
+.card__location{
+    color: #9E9279;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-weight: 700;
 }
