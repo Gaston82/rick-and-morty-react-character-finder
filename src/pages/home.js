@@ -10,7 +10,6 @@ export function Home() {
       <Header />
       <div className={styles.detail__container}>
         <Form />
-        <Reset />
       </div>
       <ListOfCharacters />
     </>

@@ -1,4 +1,6 @@
-
+.form{
+    margin-top: 20px;
+}
 .btn{
     outline: none;
     padding: .5em 3em;
@@ -8,6 +10,7 @@
     border: wheat 1px solid;
     font-size: 1rem;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .btn:hover{

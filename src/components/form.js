@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { QueryContext } from "../context/query";
 import styles from "../styles/Form.module.css";
+import Reset from "./reset";
 
 export default function Form() {
   const [value, setValue] = useState({ name: "", status: "" });
@@ -25,7 +26,7 @@ export default function Form() {
   const { name, status } = value;
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className="flex">
         <label className={styles.form__label} htmlFor="name">
           Character Name
@@ -53,6 +54,7 @@ export default function Form() {
         </label>
       </div>
       <button className={styles.btn}>Search</button>
+      <Reset />
     </form>
   );
 }
