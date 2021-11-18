@@ -16,6 +16,9 @@ export function Detail() {
     <>
       <Header />
       <div className={styles.detail__container}>
+        <Link to={"/"}>
+          <p className={styles.backLink}>Go Back to the list</p>
+        </Link>
         <article className={styles.card}>
           <img className={styles.card__image} src={image} alt={name} />
           <div className={styles.card__body}>
@@ -30,9 +33,6 @@ export function Detail() {
             <p>{episode.length}</p>
           </div>
         </article>
-        {/* <Link to={"/"}>
-          <p>Go Back to the list</p>
-        </Link> */}
       </div>
     </>
   );
