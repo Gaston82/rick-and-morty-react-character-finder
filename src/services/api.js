@@ -2,6 +2,7 @@ const getAllCharacters = async ({ name = "", status = "" }) => {
   let url = `https://rickandmortyapi.com/api/character/?name=${name}&status=${status}`;
   const response = await fetch(url);
   const data = await response.json();
+  console.log(data.results);
   if (data.error) {
     throw new Error(data.error);
   }
