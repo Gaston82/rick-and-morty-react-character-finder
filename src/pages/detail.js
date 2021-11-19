@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import useCharacter from "../hooks/useCharacter";
 import styles from "../styles/Detail.module.css";
@@ -34,6 +35,7 @@ export function Detail() {
           </div>
         </article>
       </div>
+      <Footer />
     </>
   );
 }

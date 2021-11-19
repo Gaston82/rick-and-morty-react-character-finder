@@ -7,8 +7,7 @@ p{
     justify-content: center;
     margin: 0 auto;
     align-items: center;
-    margin: 2rem;
- 
+    margin: 1rem;
 }
 
 .backLink{
@@ -43,6 +42,7 @@ p{
 
 .card__image{
     border-radius: 5px;
+    object-fit: contain;
 }
 
 

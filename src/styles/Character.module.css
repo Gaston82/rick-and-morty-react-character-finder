@@ -4,7 +4,7 @@
    
     border: 2px solid #00AFC8;
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 250px;
     transition: transform 200ms ease-in-out,background-color 500ms linear;
 }
 

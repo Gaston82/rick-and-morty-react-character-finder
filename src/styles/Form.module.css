@@ -1,16 +1,16 @@
 .form{
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .btn{
     outline: none;
-    padding: .5em 3em;
+    padding: .5em 2em;
     border-radius: 10px;
     background-color: transparent;
     color: wheat;
     border: wheat 1px solid;
     font-size: 1rem;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .btn:hover{
@@ -22,7 +22,7 @@
 .form__input{
     
     height: 30px;
-    width: 190px;
+    width: 180px;
     border-radius: 12px;
     outline: none;
     border: none;
@@ -43,5 +43,5 @@
 .form__label{
     color: wheat;
     margin-bottom: 20px;
-    margin-right: 12px;
+    margin-right: 8px;
 }
