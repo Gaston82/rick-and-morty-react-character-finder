@@ -5,7 +5,7 @@ import NotFound from "./not-found";
 import styles from "../styles/ListOfCharacters.module.css";
 
 export default function ListOfCharacters() {
-  const { characters, loading, error } = useContext(QueryContext);
+  const { characters, error } = useContext(QueryContext);
 
   return (
     <>
