@@ -65,4 +65,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - Github - [Gaston82](https://github.com/Gaston82)
 - Twitter - [@garyacode](https://twitter.com/garyacode)
 
-[Back to The Top](#Rick and Morty character finder)
+[Back](#Rick and Morty character finder)
