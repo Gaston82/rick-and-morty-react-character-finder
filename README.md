@@ -4,7 +4,7 @@
 
 # Description
 
-This is a Rick and Morty character finder app. Puedes buscar personajes por nombre y también por status (alive,dead or unknown)
+Rick and Morty character finder es una aplicación creada con React, donde puedes buscar personajes de la serie por nombre y también puedes filtrar tus búsquedas por status (alive,dead or unknown). Presionando sobre un personaje, te diriges a la página de detalle, donde puedes ver más información acerca del mismo.
 
 ### Table of Contents
 
