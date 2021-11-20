@@ -14,6 +14,8 @@ This is a Rick and Morty character finder app. Puedes buscar personajes por nomb
 - [Objetivos del proyecto](#description)
 - [Author](#author-info)
 
+---
+
 ## Objetivos del proyecto
 
 - Manejo del estado de la aplicación mediante Context api
@@ -24,11 +26,15 @@ This is a Rick and Morty character finder app. Puedes buscar personajes por nomb
 - Manejo de rutas con react router dom
 - Estilos con CSS modules
 
+---
+
 ### Technologies
 
 - React
 - CSS
-- Jest
+- Git
+
+---
 
 ## How to Use
 
@@ -50,6 +56,8 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+---
 
 ## Author info
 
