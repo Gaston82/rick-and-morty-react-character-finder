@@ -13,24 +13,36 @@ export function Detail() {
     return <p>Loading...</p>;
   }
   const { name, status, species, image, episode, location } = character;
+  const {
+    detail__container,
+    backLink,
+    card,
+    card__image,
+    card__body,
+    card__header,
+    card__title,
+    card__location,
+    card__name__location,
+  } = styles;
+
   return (
     <>
       <Header />
-      <div className={styles.detail__container}>
+      <div className={detail__container}>
         <Link to={"/"}>
-          <p className={styles.backLink}>Go Back to the list</p>
+          <p className={backLink}>Go Back to the list</p>
         </Link>
-        <article className={styles.card}>
-          <img className={styles.card__image} src={image} alt={name} />
-          <div className={styles.card__body}>
-            <h2 className={styles.card__title}>{name}</h2>
-            <div className={styles.card__header}>
+        <article className={card}>
+          <img className={card__image} src={image} alt={name} />
+          <div className={card__body}>
+            <h2 className={card__title}>{name}</h2>
+            <div className={card__header}>
               <p>{status}-</p>
               <p>{species}</p>
             </div>
-            <p className={styles.card__location}>Last known location:</p>
-            <p className={styles.card__name__location}>{location.name}</p>
-            <p className={styles.card__location}>Total episodes:</p>
+            <p className={card__location}>Last known location:</p>
+            <p className={card__name__location}>{location.name}</p>
+            <p className={card__location}>Total episodes:</p>
             <p>{episode.length}</p>
           </div>
         </article>
